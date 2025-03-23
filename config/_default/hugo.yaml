@@ -12,45 +12,93 @@ baseURL: 'https://scholar.pulppoetry.org/'
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+############################
+## 语言设置
+############################
+
+# 默认语言（例如 'en' 表示英语，'zh' 表示中文）
+defaultContentLanguage: en  # 当前设置为英语作为主要语言
+
+# 是否启用中日韩（CJK）语言支持，适用于多语言内容
+hasCJKLanguage: false  # 当前设置为 false，不支持中文字符，建议设为 true 以支持中文（例如你的名字）
+
+# 是否在 URL 中添加默认语言子目录（例如 /en/）
+defaultContentLanguageInSubdir: false  # 当前设置为 false，保持 URL 简洁（例如 /about 而不是 /en/about）
+
+# 是否移除 URL 路径中的重音符号（例如将 'é' 转换为 'e'）
+removePathAccents: true  # 当前设置为 true，生成更简洁的 URL
 
 ############################
 ## ADVANCED
 ############################
 
+############################
+## 高级设置
+############################
+
+# 构建设置
 build:
-  writeStats: true
-enableGitInfo: false
-summaryLength: 30
+  writeStats: true  # 生成构建统计信息（用于调试性能）
+
+# 是否启用 Git 信息（例如最后修改时间），需要项目在 Git 仓库中
+enableGitInfo: false  # 当前设置为 false，不启用 Git 元数据，建议设为 true 以自动获取修改时间
+
+# 摘要长度（用于 RSS 源和预览卡片），以词为单位
+summaryLength: 30  # 当前设置为 30 个词，建议增加到 50 以显示更详细的摘要
+
+# 分页设置
 pagination:
-  pagerSize: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+  pagerSize: 10  # 每页显示的条目数量（例如博客文章或出版物）
+
+# 是否启用内容中的 Emoji 支持
+enableEmoji: true  # 当前设置为 true，允许在 Markdown 内容中使用 Emoji
+
+# 是否生成 robots.txt 文件，供搜索引擎索引
+enableRobotsTXT: true  # 当前设置为 true，允许搜索引擎索引网站
+
+# 脚注返回链接的显示符号
+footnotereturnlinkcontents: <sup>^</sup>  # 当前使用上标箭头作为脚注返回链接符号
+
+# 构建时忽略的文件（使用正则表达式）
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]  # 当前忽略 Jupyter Notebook 文件、R Markdown 文件和缓存目录
+
+# 特定内容类型的自定义 URL 结构
 permalinks:
-  authors: '/author/:slug/'
-disableAliases: true
+  authors: '/author/:slug/'  # 作者页面的 URL 格式（例如 /author/ming-li）
+
+# 是否禁用 URL 别名（例如旧 URL 的重定向）
+disableAliases: true  # 当前设置为 true，禁用别名
+
+# 不同页面类型的输出格式
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
+  home: [HTML, RSS, headers, redirects, backlinks]  # 首页支持的格式
+  section: [HTML, RSS]  # 其他部分页面（例如博客、出版物）支持的格式
+
+# 图片处理设置
 imaging:
-  resampleFilter: lanczos
-  quality: 80
-  anchor: smart
-timeout: 600000
+  resampleFilter: lanczos  # 图片缩放滤镜（lanczos 为高质量滤镜）
+  quality: 80  # 图片质量（0-100，值越高质量越好但文件越大）
+  anchor: smart  # 图片裁剪的锚点（smart 自动选择最佳位置）
+
+# 构建超时时间（以毫秒为单位）
+timeout: 600000  # 当前设置为 600 秒，防止大型构建超时
+
+# 内容分类法，用于组织内容
 taxonomies:
-  author: authors
-  tag: tags
-  publication_type: publication_types
+  author: authors  # 作者分类
+  tag: tags  # 标签分类
+  publication_type: publication_types  # 出版物类型分类
+
+# Markdown 渲染设置
 markup:
-  _merge: deep
+  _merge: deep  # 深度合并 Markdown 设置（与主题默认设置合并）
   highlight:
-    lineNos: false
+    lineNos: false  # 代码高亮时不显示行号
+
+# 安全设置（例如外部脚本限制）
 security:
-  _merge: deep
+  _merge: deep  # 深度合并安全设置
+
+# 站点地图设置，用于搜索引擎优化
 sitemap:
-  _merge: deep
+  _merge: deep  # 深度合并站点地图设置
