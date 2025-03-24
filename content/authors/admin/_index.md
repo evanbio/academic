@@ -1,55 +1,55 @@
 ---
 # Display name
-title: Chris Wang
+title: Yibin Zhou # 姓名
 
 # Name pronunciation (optional)
-name_pronunciation: ""
+name_pronunciation: "Yee-bin Joe" # 发音
 
-# Full name (for SEO)
-first_name: Chirs
-last_name: Wang
+# Full name (for SEO) # 全名，用于搜索引擎优化，帮助网站被搜索到
+first_name: Yibin
+last_name: Zhou
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🧬 # tentative
 
 # Is this the primary user of the site?
-superuser: true
+superuser: true # 是否主要用户，通常设为 true
 
 # Highlight the author in author lists? (true/false)
-highlight_name: true
+highlight_name: true # 在作者列表中高亮显示名字
 
 # Role/position/tagline
 role: Graduate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Fudan University
+    url: https://www.fudan.edu.cn/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  - icon: at-symbol # 邮箱图标
+    url: 'yibinzhou00@gmail.com'
+    label: E-mail Me # 标签
+#  - icon: brands/x 
+#    url: https://twitter.com/GetResearchDev
+#  - icon: brands/instagram
+#    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/chriswang001121 # GitHub 链接
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/yibin-zhou  # LinkedIn 链接
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=oDo9Be8AAAAJ # 你的 Google Scholar 链接
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/my-orcid?orcid=0009-0009-4600-8175
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Machine Learning # 机器学习，符合你的 AI 研究方向
+  - Data Analysis # 数据分析
+  - Bioinformatics # 生物信息学，新增，结合网站领域的特点
 
 education:
   - area: PhD Artificial Intelligence
@@ -183,4 +183,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Pharmacy professional with a strong background in drug target discovery and biomarkers, currently focusing on bioinformatics and Python programming. Skilled in applying computational approaches to biomedical research, with a keen interest in collaborative projects. Seeking opportunities to contribute to innovative bioinformatics initiatives and open-source projects.
