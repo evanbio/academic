@@ -9,7 +9,10 @@ tags:
   - Reproducibility
   - Personal Toolkit
 external_link: https://github.com/evanbio/evenverse
-image: featured.png
+image:
+  filename: featured.png
+  focal_point: Smart
+  preview_only: false
 links:
   - icon: github
     icon_pack: fab

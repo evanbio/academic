@@ -9,7 +9,10 @@ tags:
   - Seurat
   - Workflow
 external_link: https://github.com/evanbio/scFlowKit
-image: featured.png
+image:
+  filename: featured.png
+  focal_point: Smart
+  preview_only: false
 links:
   - icon: github
     icon_pack: fab
