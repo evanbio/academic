@@ -157,37 +157,7 @@ skills:
         percent: 60
         icon: terminal
 
-  - name: Bioinformatics Tools
-    items:
-      - name: DESeq2 / Bioconductor
-        description: Differential expression and enrichment analysis
-        percent: 85
-        icon: dna
-      - name: Seurat
-        description: Single-cell RNA-seq analysis
-        percent: 80
-        icon: cell
-      - name: GSEA / BLAST
-        description: Functional enrichment and sequence alignment
-        percent: 70
-        icon: database
-
-  - name: Data Analysis
-    items:
-      - name: Survival Analysis
-        description: Cox regression, Kaplan-Meier, hazard models
-        percent: 80
-        icon: heartbeat
-      - name: GWAS
-        description: Summary-statistics, association testing
-        percent: 70
-        icon: chart-bar
-      - name: Visualization (ggplot2, ComplexHeatmap)
-        description: Publication-quality bio plots
-        percent: 90
-        icon: palette
-
-  - name: Tools & Platforms
+  - name: Tools
     items:
       - name: Git & GitHub
         description: Version control & collaborative workflows
@@ -216,17 +186,6 @@ skills:
         description: Translational research & target discovery
         percent: 70
         icon: flask
-
-  - name: Interests & Expansion
-    items:
-      - name: AI in Drug Discovery
-        description: Exploring TensorFlow & biomedical AI
-        percent: 60
-        icon: brain
-      - name: Machine Learning
-        description: Actively learning ML for omics data
-        percent: 50
-        icon: gears
 
 languages:
   - name: English

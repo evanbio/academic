@@ -1,5 +1,5 @@
 ---
-title: evenverse
+title: evanverse
 subtitle: A Minimal Utility Toolkit for Everyday R Tasks
 date: 2025-04-02
 summary: "A lightweight R package offering reusable functions for data processing, plotting, and project management."
@@ -8,7 +8,7 @@ tags:
   - Utilities
   - Reproducibility
   - Personal Toolkit
-external_link: https://github.com/evanbio/evenverse
+external_link: https://github.com/evanbio/evanverse
 image:
   filename: featured.png
   focal_point: Smart
@@ -17,11 +17,11 @@ links:
   - icon: github
     icon_pack: fab
     name: GitHub Repo
-    url: https://github.com/evanbio/evenverse
+    url: https://github.com/evanbio/evanverse
 ---
 
 
-**evenverse** is a personal R utility package designed to streamline repetitive tasks and promote clean, consistent code across data science and bioinformatics projects.
+**evanverse** is a personal R utility package designed to streamline repetitive tasks and promote clean, consistent code across data science and bioinformatics projects.
 
 It provides a curated set of reusable functions that help with:
 
@@ -30,12 +30,12 @@ It provides a curated set of reusable functions that help with:
 - 📁 Project structure setup & metadata management
 - 🧪 Data cleaning, reformatting, and inspection
 
-### 🌱 Why evenverse?
+### 🌱 Why evanverse?
 
 - Modular design with minimal dependencies
 - Tailored to common needs in R-based workflows
 - Lightweight, fast to load, and beginner-friendly
 - Ideal for personal research pipelines and team onboarding
 
-> evenverse is part of a growing suite of personal productivity tools developed during your academic journey — aiming to reduce friction and increase clarity in daily R tasks.
+> evanverse is part of a growing suite of personal productivity tools developed during your academic journey — aiming to reduce friction and increase clarity in daily R tasks.
 <!--more-->
