@@ -1,12 +1,8 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: Evan Zhou | Academic CV & Research Portfolio
 # Website URL
-baseURL: 'https://scholar.pulppoetry.org/'
+baseURL: 'https://academic.pulppoetry.org/'
 
 ############################
 ## LANGUAGE
@@ -20,7 +16,7 @@ baseURL: 'https://scholar.pulppoetry.org/'
 defaultContentLanguage: en  # 当前设置为英语作为主要语言
 
 # 是否启用中日韩（CJK）语言支持，适用于多语言内容
-hasCJKLanguage: false  # 当前设置为 false，不支持中文字符，建议设为 true 以支持中文（例如你的名字）
+hasCJKLanguage: true  # 当前设置为 false，不支持中文字符，建议设为 true 以支持中文（例如你的名字）
 
 # 是否在 URL 中添加默认语言子目录（例如 /en/）
 defaultContentLanguageInSubdir: false  # 当前设置为 false，保持 URL 简洁（例如 /about 而不是 /en/about）
@@ -41,10 +37,10 @@ build:
   writeStats: true  # 生成构建统计信息（用于调试性能）
 
 # 是否启用 Git 信息（例如最后修改时间），需要项目在 Git 仓库中
-enableGitInfo: false  # 当前设置为 false，不启用 Git 元数据，建议设为 true 以自动获取修改时间
+enableGitInfo: true  # 当前设置为 false，不启用 Git 元数据，建议设为 true 以自动获取修改时间
 
 # 摘要长度（用于 RSS 源和预览卡片），以词为单位
-summaryLength: 30  # 当前设置为 30 个词，建议增加到 50 以显示更详细的摘要
+summaryLength: 50  # 当前设置为 30 个词，建议增加到 50 以显示更详细的摘要
 
 # 分页设置
 pagination:

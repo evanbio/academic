@@ -1,21 +1,37 @@
-# SITE SETUP
+# ==============================================================================
+# 🧠 Academic CV Website Configuration for Evan Zhou
+# ------------------------------------------------------------------------------
+# This is the main configuration file for personal academic site built using
+# Hugo Blox (formerly Wowchemy). It defines site-wide parameters such as 
+# appearance, SEO metadata, navigation, and localization.
+#
+# ✨ Author      : Evan Zhou (https://github.com/evanbio)
+# 📚 Documentation: https://docs.hugoblox.com/
+# 🚀 Powered by  : Hugo Blox (theme system originally forked from Wowchemy)
+# 🛠 Last updated: 2025-04-22
+# ==============================================================================
+
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# YAML Syntax Guide: https://learnxinyminutes.com/docs/yaml/
 
+# ----------------------------------------
 # Appearance
+# ----------------------------------------
 appearance:
-  mode: system
-  color: indigo
+  mode: system  # 自动跟随系统深浅模式
+  color: cyan
 
-# SEO
+# ----------------------------------------
+# SEO & Social
+# ----------------------------------------
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'Evan Zhou'
+    description: 'Academic website of Evan Zhou, aspiring PhD in bioinformatics, interested in transcriptomics, multi-omics, and systems biology.'
+    twitter: 'evanbio'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -26,7 +42,9 @@ marketing:
     google: ''
     baidu: ''
 
-# Site header
+# ----------------------------------------
+# Header
+# ----------------------------------------
 header:
   navbar:
     enable: true
@@ -35,26 +53,34 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "Evan Zhou"
 
-# Site footer
+# ----------------------------------------
+# Footer
+# ----------------------------------------
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Evan Zhou. This work is licensed under {license}'  # 显示你的名字
     license:
       enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
+# ----------------------------------------
 # Localization
+# ----------------------------------------
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
+# ----------------------------------------
 # Site features
+# ----------------------------------------
 features:
   math:
-    enable: false
+    enable: true  # 可在需要时开启支持数学公式
   privacy_pack:
     enable: false
+
+

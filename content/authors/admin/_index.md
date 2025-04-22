@@ -38,13 +38,13 @@ profiles:
 #  - icon: brands/instagram
 #    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/chriswang001121 # GitHub 链接
+    url: https://github.com/evanbio # GitHub 链接
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/yibin-zhou  # LinkedIn 链接
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=oDo9Be8AAAAJ # 你的 Google Scholar 链接
   - icon: academicons/orcid
-    url: https://orcid.org/my-orcid?orcid=0009-0009-4600-8175
+    url: https://orcid.org/0009-0009-4600-8175
 
 interests:
   - Machine Learning # 机器学习，符合你的 AI 研究方向
@@ -52,133 +52,227 @@ interests:
   - Bioinformatics # 生物信息学，新增，结合网站领域的特点
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Master of Science in Clinical Pharmacy
+    institution: Fudan University
+    date_start: 2022-09-01
+    date_end: ""
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 5.0/4.0
+      GPA: 3.3 / 4.0
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Relevant Courses:
+      - Clinical Pharmacology
+      - Molecular Pharmacology
+      - Pharmacogenomics
+      - Medical Molecular Cell Biology
+
+  - area: Bachelor of Engineering in Pharmaceutical Engineering
+    institution: China Pharmaceutical University
+    date_start: 2018-09-01
+    date_end: 2022-06-30
     summary: |
-      GPA: 3.8/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 3.5 / 5.0
+
+      Relevant Courses:
+      - Biochemistry
+      - Medicinal Chemistry
+      - Organic Chemistry
+      - Pharmaceutical Analysis
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Creator & Developer
+    company_name: bioPalette: Color System for Bioinformatics Visualization
     company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2025-04-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Designed and implemented an R package providing semantic, modular color palettes tailored for biological data visualization.
+      - Integrated with ggplot2, ComplexHeatmap, ggVennDiagram, and other tools for multi-omics research.
+      - Built reusable APIs, JSON-based scheme structure, and logging-enabled palette compilation workflows.
+
+  - position: Founder & Maintainer
+    company_name: scFlowKit: Single-Cell RNA-seq Workflow Toolkit
+    company_url: ''
+    date_start: 2025-04-01
+    date_end: ''
+    summary: |
+      - Developed a reproducible scRNA-seq workflow including data import, QC, integration, and visualization.
+      - Created general-purpose functions such as `read_sce()` supporting multiple formats (.h5, .loom, .mtx, .h5ad).
+      - Focused on user-friendly design and Seurat / SingleCellExperiment compatibility.
+
+  - position: Graduate Researcher & Co-author
+    company_name: Clinical Research Collaboration
+    company_url: ''
+    date_start: 2023-10-01
+    date_end: 2024-01-31
+    summary: |
+      - Co-authored a clinical study on pediatric post-traumatic endophthalmitis (DOI: 10.3390/antibiotics14010020).
+      - Performed logistic regression and multivariate modeling on clinical and microbiological data.
+      - Contributed to manuscript writing, figure preparation, and revision.
+
+  - position: Writer & Designer
+    company_name: Cell by Cell: Personal Blog
+    company_url: https://blog.evanzhou.org
+    date_start: 2025-01-01
+    date_end: ''
+    summary: |
+      - Published bilingual articles on bioinformatics, academic writing, and scientific workflows.
+      - Built on Hugo + NotionNext, deployed via Vercel with custom theming.
+
+  - position: Learner & Documenter
+    company_name: Google
+    company_url: https://www.coursera.org
+    date_start: 2025-03-01
+    date_end: 2025-04-30
+    summary: |
+      - Completed Git training through "Happy Git with R" and Coursera.
+      - Documented practical Git workflows for academic and data science projects.
+      - Practiced GitHub Pages deployment, branch management, and collaborative commits.
+
+  - position: Graduate Researcher
+    company_name: Molecular Biology Lab
+    company_url: ''
+    date_start: 2022-09-01
+    date_end: 2025-01-31
+    summary: |
+      - Investigated the role of 4EBP1-mTOR signaling in cSCC proliferation and angiogenesis.
+      - Conducted RNA-seq, protein validation, and enrichment analyses to identify therapeutic targets.
+      - Focused on multi-omics integration and translational application in cutaneous oncology.
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Programming
     items:
+      - name: R
+        description: Statistical computing and graphics
+        percent: 90
+        icon: r-project
       - name: Python
-        description: ''
+        description: Data analysis, scripting, visualization
         percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
+        icon: python
+      - name: Bash
+        description: Shell scripting and workflow automation
         percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
+        icon: terminal
+
+  - name: Bioinformatics Tools
+    items:
+      - name: DESeq2 / Bioconductor
+        description: Differential expression and enrichment analysis
+        percent: 85
+        icon: dna
+      - name: Seurat
+        description: Single-cell RNA-seq analysis
         percent: 80
-        icon: camera
+        icon: cell
+      - name: GSEA / BLAST
+        description: Functional enrichment and sequence alignment
+        percent: 70
+        icon: database
+
+  - name: Data Analysis
+    items:
+      - name: Survival Analysis
+        description: Cox regression, Kaplan-Meier, hazard models
+        percent: 80
+        icon: heartbeat
+      - name: GWAS
+        description: Summary-statistics, association testing
+        percent: 70
+        icon: chart-bar
+      - name: Visualization (ggplot2, ComplexHeatmap)
+        description: Publication-quality bio plots
+        percent: 90
+        icon: palette
+
+  - name: Tools & Platforms
+    items:
+      - name: Git & GitHub
+        description: Version control & collaborative workflows
+        percent: 85
+        icon: github
+      - name: Linux / Ubuntu
+        description: Bioinformatics environment, shell tools
+        percent: 75
+        icon: linux
+      - name: RStudio / LaTeX
+        description: IDEs and document authoring
+        percent: 90
+        icon: file-code
+      - name: Hugo & Netlify
+        description: Static site generation & deployment
+        percent: 80
+        icon: globe
+
+  - name: Domain Knowledge
+    items:
+      - name: Clinical Pharmacy
+        description: Pharmacokinetics, pharmacogenomics
+        percent: 85
+        icon: capsule
+      - name: Drug Development
+        description: Translational research & target discovery
+        percent: 70
+        icon: flask
+
+  - name: Interests & Expansion
+    items:
+      - name: AI in Drug Discovery
+        description: Exploring TensorFlow & biomedical AI
+        percent: 60
+        icon: brain
+      - name: Machine Learning
+        description: Actively learning ML for omics data
+        percent: 50
+        icon: gears
 
 languages:
   - name: English
-    percent: 100
+    percent: 85
+    description: TOEFL in preparation, strong reading & writing, improving listening & speaking
   - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+    percent: 100
+    description: Native speaker
+  - name: Japanese
+    percent: 15
+    description: JLPT N1 scheduled, basic vocabulary & grammar
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
+  - title: Python Data Structures
+    awarder: University of Michigan
+    date: '2025-04-20'
     icon: coursera
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+      Completed with a perfect score. Covered data types, lists, dictionaries, and file handling in Python.
+
+  - title: Programming for Everybody (Getting Started with Python)
+    awarder: University of Michigan
+    date: '2025-04-20'
+    icon: coursera
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+      Introduced Python programming fundamentals including variables, conditionals, loops, and functions. Grade: 100%.
+
+  - title: R Programming
+    awarder: Johns Hopkins University
+    date: '2025-04-16'
+    icon: coursera
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Completed with 100% score. Covered R syntax, control structures, functions, and data visualization for statistical computing.
+
+  - title: Introduction to Git and GitHub
+    awarder: Google
+    date: '2025-04-09'
+    icon: coursera
+    summary: |
+      Gained hands-on experience in Git version control, GitHub repositories, and basic collaboration workflows. Grade: 100%.
+
 ---
 
 ## About Me
