@@ -80,7 +80,7 @@ education:
 
 work:
   - position: Creator & Developer
-    company_name: bioPalette: Color System for Bioinformatics Visualization
+    company_name: "bioPalette: Color System for Bioinformatics Visualization"
     company_url: ''
     date_start: 2025-04-01
     date_end: ''
@@ -90,7 +90,7 @@ work:
       - Built reusable APIs, JSON-based scheme structure, and logging-enabled palette compilation workflows.
 
   - position: Founder & Maintainer
-    company_name: scFlowKit: Single-Cell RNA-seq Workflow Toolkit
+    company_name: "scFlowKit: Single-Cell RNA-seq Workflow Toolkit"
     company_url: ''
     date_start: 2025-04-01
     date_end: ''
@@ -110,7 +110,7 @@ work:
       - Contributed to manuscript writing, figure preparation, and revision.
 
   - position: Writer & Designer
-    company_name: Cell by Cell: Personal Blog
+    company_name: "Cell by Cell: Personal Blog"
     company_url: https://blog.evanzhou.org
     date_start: 2025-01-01
     date_end: ''
