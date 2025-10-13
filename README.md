@@ -1,52 +1,78 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Yibin Zhou - Academic Portfolio
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+[![Website](https://img.shields.io/badge/Website-evanzhou.org-blue?style=flat-square)](https://evanzhou.org)
+[![Blog](https://img.shields.io/badge/Blog-Cell_by_Cell-green?style=flat-square)](https://blog.evanzhou.org)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-Profile-orange?style=flat-square)](https://scholar.google.com/citations?user=oDo9Be8AAAAJ)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+**[English](README.md)** | **[中文](README_CN.md)**
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+> 🧬 Pharmacy graduate specializing in bioinformatics, computational biology, and drug target discovery
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## 👋 Welcome
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+Welcome to my academic portfolio website! I'm a graduate student at Fudan University with a passion for integrating computational approaches into biomedical research. This repository hosts my personal academic website showcasing my research, projects, and contributions to the bioinformatics community.
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+**🔗 Visit the live site: [evanzhou.org](https://evanzhou.org)**
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## 🌟 About Me
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+I'm a pharmacy professional with expertise in:
 
-## We ask you, humbly, to support this open source movement
+- 🧪 **Drug Target Discovery** - Identifying therapeutic targets through multi-omics analysis
+- 🧬 **Bioinformatics** - Single-cell RNA-seq, data visualization, and computational pipelines
+- 💻 **Open Source Development** - Building R packages for reproducible bioinformatics research
+- 📝 **Science Communication** - Writing about workflows and best practices in computational biology
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+### Research Interests
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+- Machine Learning in Drug Discovery
+- Multi-omics Data Integration
+- Biomarker Identification
+- Clinical Pharmacology & Pharmacogenomics
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+## 🎯 What's on This Site
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+### 📚 Projects
 
-## Demo image credits
+Featured bioinformatics tools and R packages I've developed:
 
-- [Unsplash](https://unsplash.com)
+- **[bioPalette](https://github.com/evanbio/bioPalette)** - Semantic color system for biological data visualization
+- **[scFlowKit](https://github.com/evanbio/scFlowKit)** - Single-cell RNA-seq workflow toolkit
+- **[evanverse](https://github.com/evanbio/evanverse)** - Personal R package ecosystem
 
-## Latest news
+### 📄 Publications
 
-<!--START_SECTION:news-->
+Co-authored research on clinical studies and bioinformatics applications, including work on pediatric endophthalmitis and cutaneous oncology.
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+### ✍️ Blog
+
+I write about bioinformatics, academic productivity, and data science on my blog:
+**[Cell by Cell](https://blog.evanzhou.org)** - Bilingual articles on scientific workflows and computational methods
+
+## 🛠️ Tech Stack
+
+This website is built with:
+
+- **Hugo** - Static site generator
+- **Hugo Blox** - Academic theme framework
+- **Netlify** - Hosting and deployment
+
+## 📬 Get in Touch
+
+I'm always open to collaboration on bioinformatics projects and research initiatives!
+
+- 📧 Email: [yibinzhou00@gmail.com](mailto:yibinzhou00@gmail.com)
+- 🔗 LinkedIn: [yibin-zhou](https://www.linkedin.com/in/yibin-zhou)
+- 🐙 GitHub: [@evanbio](https://github.com/evanbio)
+- 📖 ORCID: [0009-0009-4600-8175](https://orcid.org/0009-0009-4600-8175)
+
+## 📄 License
+
+This website content is licensed under [MIT License](LICENSE). Feel free to use this repository as a template for your own academic website!
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ using Hugo and Hugo Blox Builder</sub>
+</p>
