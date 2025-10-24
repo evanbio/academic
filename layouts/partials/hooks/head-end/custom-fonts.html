@@ -53,15 +53,16 @@ Last Updated: 2025-10-24
   --font-family-code: 'Monaco', 'Courier New', monospace;
 
   /* 字体大小 - Font Sizes */
-  --font-size-base: 22px;             /* 基础字号 */
-  --font-size-small: 18px;            /* 小字号 */
-  --font-size-large: 24px;            /* 大字号 */
-  --font-size-h1: 4rem;               /* H1 标题 */
-  --font-size-h2: 3rem;               /* H2 标题 */
-  --font-size-h3: 2.25rem;            /* H3 标题 */
-  --font-size-h4: 1.75rem;            /* H4 标题 */
-  --font-size-h5: 1.5rem;             /* H5 标题 */
-  --font-size-h6: 1.25rem;            /* H6 标题 */
+  --font-size-base: 18px;             /* 基础字号 */
+  --font-size-small: 14px;            /* 小字号 */
+  --font-size-medium: 16px;           /* 中等字号 */
+  --font-size-large: 20px;            /* 大字号 */
+  --font-size-h1: 3rem;               /* H1 标题 (48px) */
+  --font-size-h2: 2.25rem;            /* H2 标题 (36px) */
+  --font-size-h3: 1.75rem;            /* H3 标题 (28px) */
+  --font-size-h4: 1.5rem;             /* H4 标题 (24px) */
+  --font-size-h5: 1.25rem;            /* H5 标题 (20px) */
+  --font-size-h6: 1.125rem;           /* H6 标题 (18px) */
 
   /* 行高 - Line Heights */
   --line-height-base: 1.8;            /* 基础行高 */
@@ -275,22 +276,29 @@ dd {
 
 .navbar {
   font-family: var(--font-family-base) !important;
-  font-size: 20px !important;
+  font-size: var(--font-size-medium) !important;
   background-color: var(--color-background) !important;
+  padding: var(--spacing-sm) 0 !important;
 }
 
 .navbar-brand {
   font-family: var(--font-family-heading) !important;
-  font-size: 24px !important;
-  font-weight: 600 !important;
+  font-size: var(--font-size-large) !important;
+  font-weight: 700 !important;
   color: var(--color-primary) !important;
+  letter-spacing: -0.5px !important;
+}
+
+.navbar-brand:hover {
+  color: var(--color-primary-light) !important;
 }
 
 .nav-link {
   font-family: var(--font-family-base) !important;
-  font-size: 20px !important;
+  font-size: var(--font-size-medium) !important;
   color: var(--color-text-primary) !important;
   transition: color 0.3s ease !important;
+  font-weight: 500 !important;
 }
 
 .nav-link:hover {
@@ -299,7 +307,8 @@ dd {
 
 .nav-link.active {
   color: var(--color-primary) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid var(--color-primary) !important;
 }
 
 
@@ -309,18 +318,21 @@ dd {
 
 .btn {
   font-family: var(--font-family-base) !important;
-  font-size: 20px !important;
-  padding: 12px 24px !important;
+  font-size: var(--font-size-medium) !important;
+  padding: 10px 24px !important;
   border-radius: var(--radius-md) !important;
   transition: all 0.3s ease !important;
   cursor: pointer !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
 }
 
 /* 主要按钮 */
 .btn-primary,
 .btn {
   background-color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
+  border: 2px solid var(--color-primary) !important;
   color: white !important;
 }
 
@@ -329,6 +341,7 @@ dd {
   background-color: var(--color-primary-light) !important;
   border-color: var(--color-primary-light) !important;
   box-shadow: var(--shadow-md) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* 次要按钮 */
@@ -721,6 +734,222 @@ footer a:hover {
     page-break-after: avoid !important;
     color: #000 !important;
   }
+}
+
+
+/* ==========================================================================
+   18. ADDITIONAL OPTIMIZATIONS (额外优化)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   18.1 社交图标 - Social Icons
+   -------------------------------------------------------------------------- */
+
+.social-icon,
+.network-icon,
+a[aria-label*="icon"] {
+  color: var(--color-primary) !important;
+  transition: all 0.3s ease !important;
+}
+
+.social-icon:hover,
+.network-icon:hover,
+a[aria-label*="icon"]:hover {
+  color: var(--color-primary-light) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* GitHub, LinkedIn, Google Scholar等图标 */
+svg {
+  transition: all 0.3s ease !important;
+}
+
+a:hover svg {
+  transform: scale(1.1) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.2 Download CV 按钮优化
+   -------------------------------------------------------------------------- */
+
+/* Download CV 链接转按钮样式 */
+a[href*="CV"],
+a[href*="cv"],
+a[href*="resume"],
+a[download] {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+  padding: 10px 24px !important;
+  border-radius: var(--radius-md) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid var(--color-primary) !important;
+  font-size: var(--font-size-medium) !important;
+}
+
+a[href*="CV"]:hover,
+a[href*="cv"]:hover,
+a[href*="resume"]:hover,
+a[download]:hover {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary-light) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-md) !important;
+  color: white !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.3 个人头像和名片优化
+   -------------------------------------------------------------------------- */
+
+/* 头像 */
+.avatar,
+.avatar-circle {
+  border: 3px solid var(--color-primary) !important;
+  transition: all 0.3s ease !important;
+}
+
+.avatar:hover,
+.avatar-circle:hover {
+  border-color: var(--color-primary-light) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* 名字标题 */
+.portrait-title h1,
+.portrait-title h2 {
+  font-size: var(--font-size-h1) !important;
+  color: var(--color-primary) !important;
+  margin-bottom: var(--spacing-sm) !important;
+}
+
+/* 职位/学位描述 */
+.portrait-subtitle {
+  font-size: var(--font-size-large) !important;
+  color: var(--color-text-secondary) !important;
+  font-weight: 400 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.4 兴趣和教育列表优化
+   -------------------------------------------------------------------------- */
+
+/* Interests 和 Education 区域 */
+.interests ul,
+.education ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.interests li,
+.education li {
+  padding: var(--spacing-xs) 0 !important;
+  font-size: var(--font-size-base) !important;
+  position: relative !important;
+  padding-left: var(--spacing-md) !important;
+}
+
+.interests li::before {
+  content: "▸" !important;
+  color: var(--color-primary) !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  left: 0 !important;
+}
+
+/* Education 图标颜色 */
+.education svg,
+.interests svg {
+  color: var(--color-primary) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.5 段落间距优化
+   -------------------------------------------------------------------------- */
+
+/* About Me 段落 */
+.about-section p,
+.biography-section p {
+  margin-bottom: var(--spacing-md) !important;
+  line-height: var(--line-height-base) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.6 大学名称链接
+   -------------------------------------------------------------------------- */
+
+/* Fudan University 等链接 */
+a[href*="fudan"],
+a[href*="university"] {
+  color: var(--color-primary) !important;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(13, 71, 161, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+a[href*="fudan"]:hover,
+a[href*="university"]:hover {
+  color: var(--color-primary-light) !important;
+  text-decoration-color: var(--color-primary-light) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.7 卡片和区块间距
+   -------------------------------------------------------------------------- */
+
+/* 主要内容区块 */
+section {
+  margin-bottom: var(--spacing-xl) !important;
+}
+
+/* 卡片内边距 */
+.card-body {
+  padding: var(--spacing-lg) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.8 标题下划线装饰
+   -------------------------------------------------------------------------- */
+
+/* 为主要标题添加下划线装饰 */
+h2.section-heading {
+  border-bottom: 3px solid var(--color-primary) !important;
+  padding-bottom: var(--spacing-sm) !important;
+  margin-bottom: var(--spacing-lg) !important;
+  display: inline-block !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.9 列表项间距优化
+   -------------------------------------------------------------------------- */
+
+/* Machine Learning, Data Analysis, Bioinformatics 列表 */
+ul li {
+  margin-bottom: var(--spacing-xs) !important;
+  line-height: var(--line-height-base) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.10 响应式图片
+   -------------------------------------------------------------------------- */
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: var(--radius-md) !important;
 }
 
 </style>
