@@ -19,8 +19,8 @@
 # Appearance
 # ----------------------------------------
 appearance:
-  mode: system  # 自动跟随系统深浅模式
-  color: blue
+  mode: light  # 强制亮色模式
+  color: zinc  # 中性灰色配色
 
 # ----------------------------------------
 # SEO & Social
