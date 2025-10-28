@@ -278,7 +278,16 @@ dd {
   font-family: var(--font-family-base) !important;
   font-size: var(--font-size-medium) !important;
   background-color: var(--color-background) !important;
-  padding: var(--spacing-sm) 0 !important;
+  padding: var(--spacing-sm) 2rem !important;
+  max-width: 100% !important;
+}
+
+/* 导航栏容器 */
+.navbar-nav,
+.navbar > .container,
+.navbar > .container-fluid {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .navbar-brand {
@@ -1182,6 +1191,176 @@ a[href*="resume"] {
   .portrait-title h2 {
     font-size: 1.5rem !important;
   }
+
+  /* 导航栏移动端间距 */
+  .navbar {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+
+/* ==========================================================================
+   20. DARK MODE SUPPORT (暗色模式支持)
+   ========================================================================== */
+
+/* 暗色模式变量 */
+[data-theme="dark"],
+.dark,
+body.dark,
+html.dark body {
+  /* 暗色主题颜色 */
+  --color-primary: #64b5f6 !important;           /* 浅蓝色 - 在深色背景上更易读 */
+  --color-primary-light: #90caf9 !important;     /* 更浅的蓝色 */
+  --color-primary-dark: #42a5f5 !important;      /* 中蓝色 */
+
+  /* 暗色中性色 */
+  --color-text-primary: #e0e0e0 !important;      /* 浅灰色文字 */
+  --color-text-secondary: #b0b0b0 !important;    /* 次要文字 */
+  --color-text-muted: #808080 !important;        /* 弱化文字 */
+  --color-background: #121212 !important;        /* 深色背景 */
+  --color-background-gray: #1e1e1e !important;   /* 深灰背景 */
+}
+
+/* 暗色模式下的基础样式 */
+[data-theme="dark"] body,
+.dark body,
+body.dark,
+html.dark body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* 暗色模式下的导航栏 */
+[data-theme="dark"] .navbar,
+.dark .navbar,
+body.dark .navbar {
+  background-color: var(--color-background) !important;
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+/* 暗色模式下的链接 */
+[data-theme="dark"] a,
+.dark a,
+body.dark a {
+  color: var(--color-primary) !important;
+}
+
+[data-theme="dark"] a:hover,
+.dark a:hover,
+body.dark a:hover {
+  color: var(--color-primary-light) !important;
+}
+
+/* 暗色模式下的标题 */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+  color: var(--color-primary) !important;
+}
+
+/* 暗色模式下的卡片 */
+[data-theme="dark"] .card,
+.dark .card,
+body.dark .card {
+  background-color: var(--color-background-gray) !important;
+  border: 1px solid #2a2a2a !important;
+}
+
+/* 暗色模式下的按钮 */
+[data-theme="dark"] .btn,
+[data-theme="dark"] .btn-primary,
+.dark .btn, .dark .btn-primary,
+body.dark .btn, body.dark .btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #121212 !important;
+}
+
+[data-theme="dark"] .btn:hover,
+[data-theme="dark"] .btn-primary:hover,
+.dark .btn:hover, .dark .btn-primary:hover,
+body.dark .btn:hover, body.dark .btn-primary:hover {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary-light) !important;
+}
+
+/* 暗色模式下的表格 */
+[data-theme="dark"] th,
+.dark th,
+body.dark th {
+  background-color: var(--color-background-gray) !important;
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] td,
+.dark td,
+body.dark td {
+  border-bottom: 1px solid #2a2a2a !important;
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] tr:hover,
+.dark tr:hover,
+body.dark tr:hover {
+  background-color: #1e1e1e !important;
+}
+
+/* 暗色模式下的代码块 */
+[data-theme="dark"] code,
+.dark code,
+body.dark code {
+  background-color: var(--color-background-gray) !important;
+  color: #f48fb1 !important;
+}
+
+[data-theme="dark"] pre,
+.dark pre,
+body.dark pre {
+  background-color: #1e1e1e !important;
+  border: 1px solid #2a2a2a !important;
+}
+
+/* 暗色模式下的引用 */
+[data-theme="dark"] blockquote,
+.dark blockquote,
+body.dark blockquote {
+  background-color: var(--color-background-gray) !important;
+  border-left-color: var(--color-primary) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* 暗色模式下的表单 */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select,
+.dark input, .dark textarea, .dark select,
+body.dark input, body.dark textarea, body.dark select {
+  background-color: var(--color-background-gray) !important;
+  border-color: #2a2a2a !important;
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus,
+.dark input:focus, .dark textarea:focus, .dark select:focus,
+body.dark input:focus, body.dark textarea:focus, body.dark select:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2) !important;
+}
+
+/* 暗色模式下的头像边框 */
+[data-theme="dark"] .avatar,
+[data-theme="dark"] .avatar-circle,
+.dark .avatar, .dark .avatar-circle,
+body.dark .avatar, body.dark .avatar-circle {
+  border-color: var(--color-primary) !important;
 }
 
 </style>
