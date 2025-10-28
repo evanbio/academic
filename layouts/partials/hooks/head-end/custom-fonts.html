@@ -6,21 +6,29 @@ This file overrides Hugo Blox Tailwind CSS defaults using head-end hooks.
 Organized by sections for easy maintenance and modification.
 
 Author: Evan Zhou
-Last Updated: 2025-10-24
+Last Updated: 2025-10-28
 ==============================================================================
 -->
+
+<!-- Preconnect to Google Fonts for faster loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <style>
 /* ==========================================================================
    1. FONT IMPORTS
    ========================================================================== */
 
-/* Import Roboto font from Google Fonts */
+/* Import Inter font for headings - Modern, highly readable */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Import Roboto font for body text */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* 可选：添加其他字体
+/* Alternative font options (uncomment to use):
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 */
 
 
@@ -49,7 +57,7 @@ Last Updated: 2025-10-24
 
   /* 字体设置 - Typography */
   --font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-heading: 'Roboto', sans-serif;
+  --font-family-heading: 'Inter', 'Roboto', sans-serif;
   --font-family-code: 'Monaco', 'Courier New', monospace;
 
   /* 字体大小 - Font Sizes */
@@ -119,11 +127,12 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--font-family-heading) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   line-height: var(--line-height-heading) !important;
   color: var(--color-primary) !important;
   margin-top: var(--spacing-md) !important;
   margin-bottom: var(--spacing-sm) !important;
+  letter-spacing: -0.025em !important;
 }
 
 h1, .h1 {
@@ -322,9 +331,9 @@ nav::before {
 .navbar-brand {
   font-family: var(--font-family-heading) !important;
   font-size: 22px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   color: var(--color-primary) !important;
-  letter-spacing: -0.5px !important;
+  letter-spacing: -0.025em !important;
 }
 
 .navbar-brand:hover {
