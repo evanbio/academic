@@ -278,16 +278,19 @@ dd {
   font-family: var(--font-family-base) !important;
   font-size: var(--font-size-medium) !important;
   background-color: var(--color-background) !important;
-  padding: var(--spacing-sm) 2rem !important;
+  padding: var(--spacing-sm) 3rem !important;
   max-width: 100% !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /* 导航栏容器 */
 .navbar-nav,
 .navbar > .container,
 .navbar > .container-fluid {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
 .navbar-brand {
@@ -589,9 +592,17 @@ article,
 }
 
 .article-title {
-  font-size: var(--font-size-h2) !important;
+  font-size: var(--font-size-h3) !important;
   color: var(--color-primary) !important;
   margin-bottom: var(--spacing-lg) !important;
+}
+
+/* Blog 文章标题 */
+.blog-post-title,
+article h1,
+.post-title,
+h1.title {
+  font-size: var(--font-size-h3) !important;
 }
 
 .article-metadata {
@@ -1236,7 +1247,9 @@ html.dark body {
 .dark .navbar,
 body.dark .navbar {
   background-color: var(--color-background) !important;
-  border-bottom: 1px solid #2a2a2a !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /* 暗色模式下的链接 */
@@ -1276,18 +1289,30 @@ body.dark .card {
 [data-theme="dark"] .btn,
 [data-theme="dark"] .btn-primary,
 .dark .btn, .dark .btn-primary,
-body.dark .btn, body.dark .btn-primary {
+body.dark .btn, body.dark .btn-primary,
+[data-theme="dark"] a[href*="CV"],
+[data-theme="dark"] a[href*="cv"],
+[data-theme="dark"] a[href*="resume"],
+.dark a[href*="CV"], .dark a[href*="cv"], .dark a[href*="resume"],
+body.dark a[href*="CV"], body.dark a[href*="cv"], body.dark a[href*="resume"] {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
   color: #121212 !important;
+  font-weight: 600 !important;
 }
 
 [data-theme="dark"] .btn:hover,
 [data-theme="dark"] .btn-primary:hover,
 .dark .btn:hover, .dark .btn-primary:hover,
-body.dark .btn:hover, body.dark .btn-primary:hover {
+body.dark .btn:hover, body.dark .btn-primary:hover,
+[data-theme="dark"] a[href*="CV"]:hover,
+[data-theme="dark"] a[href*="cv"]:hover,
+[data-theme="dark"] a[href*="resume"]:hover,
+.dark a[href*="CV"]:hover, .dark a[href*="cv"]:hover, .dark a[href*="resume"]:hover,
+body.dark a[href*="CV"]:hover, body.dark a[href*="cv"]:hover, body.dark a[href*="resume"]:hover {
   background-color: var(--color-primary-light) !important;
   border-color: var(--color-primary-light) !important;
+  color: #121212 !important;
 }
 
 /* 暗色模式下的表格 */
