@@ -53,16 +53,16 @@ Last Updated: 2025-10-24
   --font-family-code: 'Monaco', 'Courier New', monospace;
 
   /* 字体大小 - Font Sizes */
-  --font-size-base: 16px;             /* 基础字号 */
-  --font-size-small: 14px;            /* 小字号 */
-  --font-size-medium: 16px;           /* 中等字号 */
-  --font-size-large: 18px;            /* 大字号 */
+  --font-size-base: 18px;             /* 基础字号 */
+  --font-size-small: 16px;            /* 小字号 */
+  --font-size-medium: 18px;           /* 中等字号 */
+  --font-size-large: 20px;            /* 大字号 */
   --font-size-h1: 2.5rem;             /* H1 标题 (40px) */
   --font-size-h2: 2rem;               /* H2 标题 (32px) */
-  --font-size-h3: 1.5rem;             /* H3 标题 (24px) */
-  --font-size-h4: 1.25rem;            /* H4 标题 (20px) */
-  --font-size-h5: 1.125rem;           /* H5 标题 (18px) */
-  --font-size-h6: 1rem;               /* H6 标题 (16px) */
+  --font-size-h3: 1.625rem;           /* H3 标题 (26px) */
+  --font-size-h4: 1.375rem;           /* H4 标题 (22px) */
+  --font-size-h5: 1.25rem;            /* H5 标题 (20px) */
+  --font-size-h6: 1.125rem;           /* H6 标题 (18px) */
 
   /* 行高 - Line Heights */
   --line-height-base: 1.8;            /* 基础行高 */
@@ -276,13 +276,28 @@ dd {
 
 .navbar {
   font-family: var(--font-family-base) !important;
-  font-size: var(--font-size-medium) !important;
+  font-size: 18px !important;
   background-color: var(--color-background) !important;
   padding: var(--spacing-sm) 3rem !important;
   max-width: 100% !important;
   border: none !important;
+  border-top: none !important;
   border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
   box-shadow: none !important;
+}
+
+/* 移除所有可能的导航栏边框 */
+.navbar::after,
+.navbar::before,
+header::after,
+header::before,
+nav::after,
+nav::before {
+  display: none !important;
+  border: none !important;
+  content: none !important;
 }
 
 /* 导航栏容器 */
@@ -291,11 +306,12 @@ dd {
 .navbar > .container-fluid {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+  border: none !important;
 }
 
 .navbar-brand {
   font-family: var(--font-family-heading) !important;
-  font-size: var(--font-size-large) !important;
+  font-size: 22px !important;
   font-weight: 700 !important;
   color: var(--color-primary) !important;
   letter-spacing: -0.5px !important;
@@ -307,7 +323,7 @@ dd {
 
 .nav-link {
   font-family: var(--font-family-base) !important;
-  font-size: var(--font-size-medium) !important;
+  font-size: 18px !important;
   color: var(--color-text-primary) !important;
   transition: color 0.3s ease !important;
   font-weight: 500 !important;
@@ -1245,11 +1261,45 @@ html.dark body {
 /* 暗色模式下的导航栏 */
 [data-theme="dark"] .navbar,
 .dark .navbar,
-body.dark .navbar {
+body.dark .navbar,
+[data-theme="dark"] header,
+.dark header,
+body.dark header,
+[data-theme="dark"] nav,
+.dark nav,
+body.dark nav {
   background-color: var(--color-background) !important;
   border: none !important;
+  border-top: none !important;
   border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
   box-shadow: none !important;
+}
+
+/* 暗色模式下移除伪元素边框 */
+[data-theme="dark"] .navbar::after,
+[data-theme="dark"] .navbar::before,
+[data-theme="dark"] header::after,
+[data-theme="dark"] header::before,
+[data-theme="dark"] nav::after,
+[data-theme="dark"] nav::before,
+.dark .navbar::after,
+.dark .navbar::before,
+.dark header::after,
+.dark header::before,
+.dark nav::after,
+.dark nav::before,
+body.dark .navbar::after,
+body.dark .navbar::before,
+body.dark header::after,
+body.dark header::before,
+body.dark nav::after,
+body.dark nav::before {
+  display: none !important;
+  border: none !important;
+  content: none !important;
+  background: none !important;
 }
 
 /* 暗色模式下的链接 */
