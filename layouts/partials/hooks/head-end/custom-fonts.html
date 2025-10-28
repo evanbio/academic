@@ -53,16 +53,16 @@ Last Updated: 2025-10-24
   --font-family-code: 'Monaco', 'Courier New', monospace;
 
   /* 字体大小 - Font Sizes */
-  --font-size-base: 18px;             /* 基础字号 */
+  --font-size-base: 16px;             /* 基础字号 */
   --font-size-small: 14px;            /* 小字号 */
   --font-size-medium: 16px;           /* 中等字号 */
-  --font-size-large: 20px;            /* 大字号 */
-  --font-size-h1: 3rem;               /* H1 标题 (48px) */
-  --font-size-h2: 2.25rem;            /* H2 标题 (36px) */
-  --font-size-h3: 1.75rem;            /* H3 标题 (28px) */
-  --font-size-h4: 1.5rem;             /* H4 标题 (24px) */
-  --font-size-h5: 1.25rem;            /* H5 标题 (20px) */
-  --font-size-h6: 1.125rem;           /* H6 标题 (18px) */
+  --font-size-large: 18px;            /* 大字号 */
+  --font-size-h1: 2.5rem;             /* H1 标题 (40px) */
+  --font-size-h2: 2rem;               /* H2 标题 (32px) */
+  --font-size-h3: 1.5rem;             /* H3 标题 (24px) */
+  --font-size-h4: 1.25rem;            /* H4 标题 (20px) */
+  --font-size-h5: 1.125rem;           /* H5 标题 (18px) */
+  --font-size-h6: 1rem;               /* H6 标题 (16px) */
 
   /* 行高 - Line Heights */
   --line-height-base: 1.8;            /* 基础行高 */
@@ -70,11 +70,11 @@ Last Updated: 2025-10-24
   --line-height-tight: 1.5;           /* 紧凑行高 */
 
   /* 间距 - Spacing */
-  --spacing-xs: 0.5rem;               /* 8px */
-  --spacing-sm: 1rem;                 /* 16px */
-  --spacing-md: 1.5rem;               /* 24px */
-  --spacing-lg: 2rem;                 /* 32px */
-  --spacing-xl: 3rem;                 /* 48px */
+  --spacing-xs: 0.25rem;              /* 4px */
+  --spacing-sm: 0.5rem;               /* 8px */
+  --spacing-md: 1rem;                 /* 16px */
+  --spacing-lg: 1.5rem;               /* 24px */
+  --spacing-xl: 2rem;                 /* 32px */
 
   /* 圆角 - Border Radius */
   --radius-sm: 4px;
@@ -122,8 +122,8 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500 !important;
   line-height: var(--line-height-heading) !important;
   color: var(--color-primary) !important;
-  margin-top: var(--spacing-lg) !important;
-  margin-bottom: var(--spacing-md) !important;
+  margin-top: var(--spacing-md) !important;
+  margin-bottom: var(--spacing-sm) !important;
 }
 
 h1, .h1 {
@@ -159,7 +159,7 @@ p {
   font-size: var(--font-size-base) !important;
   line-height: var(--line-height-base) !important;
   color: var(--color-text-primary) !important;
-  margin-bottom: var(--spacing-md) !important;
+  margin-bottom: var(--spacing-sm) !important;
 }
 
 /* 小字体文本 */
@@ -909,7 +909,8 @@ a[href*="university"]:hover {
 
 /* 主要内容区块 */
 section {
-  margin-bottom: var(--spacing-xl) !important;
+  margin-bottom: var(--spacing-lg) !important;
+  padding-top: var(--spacing-sm) !important;
 }
 
 /* 卡片内边距 */
@@ -950,6 +951,237 @@ img {
   max-width: 100% !important;
   height: auto !important;
   border-radius: var(--radius-md) !important;
+}
+
+
+/* ==========================================================================
+   19. LAYOUT OPTIMIZATIONS (布局优化)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   19.1 页面容器和内边距
+   -------------------------------------------------------------------------- */
+
+/* 主容器最大宽度和居中 */
+.container,
+.container-fluid,
+main,
+#main {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* 减少顶部空白 */
+body > main,
+body > #main,
+.page-body {
+  padding-top: 1rem !important;
+  margin-top: 0 !important;
+}
+
+/* Hero/Profile 区域顶部间距 */
+.page-header,
+.hero,
+.profile {
+  padding-top: 1rem !important;
+  margin-top: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.2 个人主页布局优化
+   -------------------------------------------------------------------------- */
+
+/* 个人信息卡片区域 */
+.wg-about,
+.about-section {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-top: 0 !important;
+}
+
+/* 左右两栏布局间距 */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.col,
+[class*="col-"] {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.3 名字和标题优化
+   -------------------------------------------------------------------------- */
+
+/* 名字 */
+.portrait-title h1,
+.portrait-title h2,
+.author-name {
+  font-size: 2rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
+  line-height: 1.2 !important;
+}
+
+/* 职位描述 */
+.portrait-subtitle,
+.author-title {
+  font-size: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Graduate 标题 */
+.portrait-title h3 {
+  font-size: 1.25rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.4 About Me 区域优化
+   -------------------------------------------------------------------------- */
+
+/* About Me 标题 */
+h2:first-of-type,
+.about-title {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-size: 1.75rem !important;
+}
+
+/* About Me 段落 */
+.about-section p:first-of-type {
+  margin-top: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.5 Interests 和 Education 区域优化
+   -------------------------------------------------------------------------- */
+
+/* Interests 和 Education 标题 */
+h3 {
+  font-size: 1.25rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* 列表项 */
+.interests li,
+.education li {
+  padding: 0.25rem 0 !important;
+  padding-left: 1.5rem !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Education 学校名称 */
+.education .institution {
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+/* Education 学位描述 */
+.education .course {
+  font-size: 0.9rem !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.6 社交图标区域优化
+   -------------------------------------------------------------------------- */
+
+/* 社交图标容器 */
+.social-icons,
+.network-icon {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* 图标尺寸 */
+.social-icon svg,
+.network-icon svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.7 Download CV 按钮优化
+   -------------------------------------------------------------------------- */
+
+/* CV 按钮 */
+a[href*="CV"],
+a[href*="cv"],
+a[href*="resume"] {
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.95rem !important;
+  margin-top: 0.5rem !important;
+  display: inline-block !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.8 头像优化
+   -------------------------------------------------------------------------- */
+
+/* 头像容器 */
+.avatar {
+  margin-bottom: 0.75rem !important;
+}
+
+.avatar img {
+  max-width: 200px !important;
+  width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   19.9 响应式优化
+   -------------------------------------------------------------------------- */
+
+/* 桌面端 - 更紧凑的布局 */
+@media (min-width: 1200px) {
+  .container,
+  main {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+/* 平板端 */
+@media (max-width: 991px) {
+  .container,
+  main {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .portrait-title h1,
+  .portrait-title h2 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* 手机端 */
+@media (max-width: 768px) {
+  .container,
+  main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .col,
+  [class*="col-"] {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .portrait-title h1,
+  .portrait-title h2 {
+    font-size: 1.5rem !important;
+  }
 }
 
 </style>
