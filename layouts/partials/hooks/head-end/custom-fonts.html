@@ -274,7 +274,12 @@ dd {
    7. NAVIGATION (导航栏)
    ========================================================================== */
 
-.navbar {
+.navbar,
+header,
+nav,
+.navbar-container,
+.site-header,
+.page-header {
   font-family: var(--font-family-base) !important;
   font-size: 18px !important;
   background-color: var(--color-background) !important;
@@ -286,9 +291,11 @@ dd {
   border-left: none !important;
   border-right: none !important;
   box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
-/* 移除所有可能的导航栏边框 */
+/* 移除所有可能的导航栏边框和阴影 */
 .navbar::after,
 .navbar::before,
 header::after,
@@ -298,6 +305,9 @@ nav::before {
   display: none !important;
   border: none !important;
   content: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
 /* 导航栏容器 */
@@ -323,7 +333,7 @@ nav::before {
 
 .nav-link {
   font-family: var(--font-family-base) !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   color: var(--color-text-primary) !important;
   transition: color 0.3s ease !important;
   font-weight: 500 !important;
@@ -337,6 +347,71 @@ nav::before {
   color: var(--color-primary) !important;
   font-weight: 600 !important;
   border-bottom: 2px solid var(--color-primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   7.1 导航栏按钮 - Navbar Buttons (Search & Theme Toggle)
+   -------------------------------------------------------------------------- */
+
+/* 搜索按钮 - Search Button */
+.navbar .search-button,
+.navbar [aria-label*="search" i],
+.nav-item.search,
+.nav-search,
+.navbar-search-button,
+button[aria-label*="Search"],
+a[aria-label*="Search"] {
+  width: 44px !important;
+  height: 44px !important;
+  font-size: 22px !important;
+  padding: 10px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 搜索图标 - Search Icon */
+.navbar .search-button svg,
+.navbar [aria-label*="search" i] svg,
+button[aria-label*="Search"] svg,
+a[aria-label*="Search"] svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+/* 主题切换按钮 - Theme Toggle Button */
+.navbar .theme-toggle,
+.navbar [aria-label*="theme" i],
+.navbar [aria-label*="dark" i],
+.navbar [aria-label*="mode" i],
+.nav-item.theme-toggle,
+.dark-mode-toggle,
+button[aria-label*="theme"],
+button[aria-label*="dark"],
+button[aria-label*="Dark mode"] {
+  width: 44px !important;
+  height: 44px !important;
+  font-size: 22px !important;
+  padding: 10px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 主题切换图标 - Theme Icon */
+.navbar .theme-toggle svg,
+.navbar [aria-label*="theme" i] svg,
+.navbar [aria-label*="dark" i] svg,
+.navbar [aria-label*="mode" i] svg,
+button[aria-label*="theme"] svg,
+button[aria-label*="dark"] svg,
+button[aria-label*="Dark mode"] svg {
+  width: 22px !important;
+  height: 22px !important;
 }
 
 
@@ -1275,9 +1350,11 @@ body.dark nav {
   border-left: none !important;
   border-right: none !important;
   box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
-/* 暗色模式下移除伪元素边框 */
+/* 暗色模式下移除伪元素边框和阴影 */
 [data-theme="dark"] .navbar::after,
 [data-theme="dark"] .navbar::before,
 [data-theme="dark"] header::after,
@@ -1300,6 +1377,9 @@ body.dark nav::before {
   border: none !important;
   content: none !important;
   background: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
 /* 暗色模式下的链接 */
