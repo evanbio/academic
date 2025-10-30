@@ -1,6 +1,6 @@
 # 周逸彬 - 学术作品集
 
-[![Website](https://img.shields.io/badge/Website-evanzhou.org-blue?style=flat-square)](https://evanzhou.org)
+[![Website](https://img.shields.io/badge/Website-academic.evanzhou.org-blue?style=flat-square)](https://academic.evanzhou.org)
 [![Blog](https://img.shields.io/badge/Blog-Cell_by_Cell-green?style=flat-square)](https://blog.evanzhou.org)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Profile-orange?style=flat-square)](https://scholar.google.com/citations?user=oDo9Be8AAAAJ)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
@@ -13,7 +13,7 @@
 
 欢迎来到我的学术作品集网站！我是复旦大学的研究生，热衷于将计算方法应用于生物医学研究。这个仓库托管着我的个人学术网站，展示了我的研究项目以及对生物信息学社区的贡献。
 
-**🔗 访问网站：[evanzhou.org](https://evanzhou.org)**
+**🔗 访问网站：[academic.evanzhou.org](https://academic.evanzhou.org)**
 
 ## 🌟 关于我
 
@@ -62,7 +62,7 @@
 
 我一直欢迎在生物信息学项目和研究上的合作！
 
-- 📧 邮箱：[yibinzhou00@gmail.com](mailto:yibinzhou00@gmail.com)
+- 📧 邮箱：[evanzhou.bio@gmail.com](mailto:evanzhou.bio@gmail.com)
 - 🔗 LinkedIn：[yibin-zhou](https://www.linkedin.com/in/yibin-zhou)
 - 🐙 GitHub：[@evanbio](https://github.com/evanbio)
 - 📖 ORCID：[0009-0009-4600-8175](https://orcid.org/0009-0009-4600-8175)

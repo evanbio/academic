@@ -1,6 +1,6 @@
 # Yibin Zhou - Academic Portfolio
 
-[![Website](https://img.shields.io/badge/Website-evanzhou.org-blue?style=flat-square)](https://evanzhou.org)
+[![Website](https://img.shields.io/badge/Website-academic.evanzhou.org-blue?style=flat-square)](https://academic.evanzhou.org)
 [![Blog](https://img.shields.io/badge/Blog-Cell_by_Cell-green?style=flat-square)](https://blog.evanzhou.org)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Profile-orange?style=flat-square)](https://scholar.google.com/citations?user=oDo9Be8AAAAJ)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
@@ -13,7 +13,7 @@
 
 Welcome to my academic portfolio website! I'm a graduate student at Fudan University with a passion for integrating computational approaches into biomedical research. This repository hosts my personal academic website showcasing my research, projects, and contributions to the bioinformatics community.
 
-**🔗 Visit the live site: [evanzhou.org](https://evanzhou.org)**
+**🔗 Visit the live site: [academic.evanzhou.org](https://academic.evanzhou.org)**
 
 ## 🌟 About Me
 
@@ -62,7 +62,7 @@ This website is built with:
 
 I'm always open to collaboration on bioinformatics projects and research initiatives!
 
-- 📧 Email: [yibinzhou00@gmail.com](mailto:yibinzhou00@gmail.com)
+- 📧 Email: [evanzhou.bio@gmail.com](mailto:evanzhou.bio@gmail.com)
 - 🔗 LinkedIn: [yibin-zhou](https://www.linkedin.com/in/yibin-zhou)
 - 🐙 GitHub: [@evanbio](https://github.com/evanbio)
 - 📖 ORCID: [0009-0009-4600-8175](https://orcid.org/0009-0009-4600-8175)
