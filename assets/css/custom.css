@@ -1,34 +1,57 @@
 /* ============================================================================
-   Custom Styles for Menu, Links, and Sections
-   Apply evan_color theme to specific elements
+   Custom Styles for Academic Website
+   Material Blue theme with light/dark mode support
    ============================================================================ */
 
-/* Primary brand color (Material Blue) */
+/* Primary brand colors (Material Blue) */
 :root {
   --brand-primary: #0d47a1;        /* Material Blue 700 - Main */
   --brand-primary-hover: #1565c0;  /* Material Blue 600 - Hover */
   --brand-primary-dark: #002171;   /* Material Blue 900 - Dark */
+  --brand-primary-light: #2196F3;  /* Material Blue 500 - Light accent */
 }
 
 /* ============================================================================
-   MENU / NAVBAR
+   NAVBAR - Light/Dark mode adaptive
    ============================================================================ */
 
-/* Navbar background */
-.navbar,
-header.navbar {
-  background-color: #FFFFFF !important;
-  border-bottom: 1px solid #E5E7EB;
+/* Light mode navbar */
+[data-theme="light"] .navbar,
+[data-theme="light"] header.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Menu text color */
+/* Dark mode navbar */
+[data-theme="dark"] .navbar,
+[data-theme="dark"] header.navbar {
+  background-color: rgba(17, 24, 39, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar text - larger font size */
 .nav-link {
-  color: #1F2937 !important;  /* Gray 800 */
+  font-size: 1.05rem !important;  /* Increased from default */
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-/* Menu text hover */
+/* Light mode nav text */
+[data-theme="light"] .nav-link {
+  color: #374151 !important;  /* Gray 700 */
+}
+
+/* Dark mode nav text */
+[data-theme="dark"] .nav-link {
+  color: #E5E7EB !important;  /* Gray 200 */
+}
+
+/* Nav link hover - both modes */
 .nav-link:hover {
-  color: var(--brand-primary) !important;
+  color: var(--brand-primary-light) !important;
+  transform: translateY(-1px);
 }
 
 /* Active menu item */
@@ -37,36 +60,147 @@ header.navbar {
   font-weight: 600;
 }
 
-/* Logo text */
+[data-theme="dark"] .nav-link.active {
+  color: var(--brand-primary-light) !important;
+}
+
+/* Logo/brand text */
 .navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem !important;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="light"] .navbar-brand {
   color: var(--brand-primary-dark) !important;
-  font-weight: 600;
+}
+
+[data-theme="dark"] .navbar-brand {
+  color: var(--brand-primary-light) !important;
 }
 
 /* ============================================================================
    LINKS
    ============================================================================ */
 
-/* Default link color */
-a {
+/* Main content links */
+a:not(.nav-link):not(.navbar-brand):not(.btn) {
   color: var(--brand-primary) !important;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
-/* Link hover */
-a:hover {
+a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
   color: var(--brand-primary-hover) !important;
+  text-decoration: underline;
+}
+
+[data-theme="dark"] a:not(.nav-link):not(.navbar-brand):not(.btn) {
+  color: var(--brand-primary-light) !important;
+}
+
+[data-theme="dark"] a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
+  color: #42A5F5 !important;  /* Lighter blue for dark mode */
 }
 
 /* ============================================================================
-   HOME SECTIONS (Optional)
+   BUTTONS
    ============================================================================ */
 
-/* Alternating section backgrounds (if needed) */
-/* section:nth-child(odd) {
-  background-color: #FFFFFF;
+/* Primary buttons */
+.btn-primary,
+.btn-outline-primary {
+  background-color: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  transition: all 0.3s ease;
 }
 
-section:nth-child(even) {
-  background-color: #F0FDFA;
-} */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: var(--brand-primary-hover) !important;
+  border-color: var(--brand-primary-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+}
+
+/* Download CV button */
+.btn-outline-primary {
+  color: var(--brand-primary) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+}
+
+/* ============================================================================
+   SOCIAL ICONS
+   ============================================================================ */
+
+/* Social media icons */
+.social-icon,
+.network-icon {
+  color: var(--brand-primary) !important;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover,
+.network-icon:hover {
+  color: var(--brand-primary-hover) !important;
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .social-icon,
+[data-theme="dark"] .network-icon {
+  color: var(--brand-primary-light) !important;
+}
+
+[data-theme="dark"] .social-icon:hover,
+[data-theme="dark"] .network-icon:hover {
+  color: #42A5F5 !important;
+}
+
+/* ============================================================================
+   CARDS & SECTIONS
+   ============================================================================ */
+
+/* Card links */
+.card a {
+  color: var(--brand-primary) !important;
+}
+
+.card a:hover {
+  color: var(--brand-primary-hover) !important;
+}
+
+[data-theme="dark"] .card a {
+  color: var(--brand-primary-light) !important;
+}
+
+/* Section headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Interests list and education icons */
+.fas, .far, .fab {
+  color: var(--brand-primary) !important;
+}
+
+[data-theme="dark"] .fas,
+[data-theme="dark"] .far,
+[data-theme="dark"] .fab {
+  color: var(--brand-primary-light) !important;
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+[data-theme="light"] footer a {
+  color: var(--brand-primary) !important;
+}
+
+[data-theme="dark"] footer a {
+  color: var(--brand-primary-light) !important;
+}
