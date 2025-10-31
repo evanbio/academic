@@ -30,7 +30,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: 'Evan Zhou'
-    description: 'Academic website of Evan Zhou, aspiring PhD in bioinformatics, interested in transcriptomics, multi-omics, and systems biology.'
+    description: 'Academic website of Evan Zhou, graduate student in clinical pharmacy at Fudan University, specializing in single-cell omics and computational biology.'
     twitter: 'evanbio'
   analytics:
     google_analytics: ''
@@ -41,6 +41,34 @@ marketing:
   verification:
     google: ''
     baidu: ''
+
+# ----------------------------------------
+# Contact Information
+# ----------------------------------------
+contact:
+  email: 'evanzhou.bio@gmail.com'
+  phone: '(+86) 137-9063-7043'
+  address:
+    city: 'Shanghai'
+    country: 'China'
+    country_code: 'CN'
+  links:
+    - icon: 'envelope'
+      icon_pack: 'fas'
+      name: 'Email'
+      link: 'mailto:evanzhou.bio@gmail.com'
+    - icon: 'github'
+      icon_pack: 'fab'
+      name: 'GitHub'
+      link: 'https://github.com/evanbio'
+    - icon: 'linkedin'
+      icon_pack: 'fab'
+      name: 'LinkedIn'
+      link: 'https://www.linkedin.com/in/yibin-zhou'
+    - icon: 'orcid'
+      icon_pack: 'ai'
+      name: 'ORCID'
+      link: 'https://orcid.org/0009-0009-4600-8175'
 
 # ----------------------------------------
 # Header
@@ -79,8 +107,46 @@ locale:
 # ----------------------------------------
 features:
   math:
-    enable: true  # 可在需要时开启支持数学公式
+    enable: true
   privacy_pack:
     enable: false
+  syntax_highlighter:
+    enable: true
+    theme_light: 'github-light'
+    theme_dark: 'dracula'
+    languages:
+      - r
+      - python
+      - bash
+
+# ----------------------------------------
+# Content Display
+# ----------------------------------------
+reading_time: true
+section_pager: false
+sharing: true
+abstract_length: 135
+
+# ----------------------------------------
+# Avatar
+# ----------------------------------------
+avatar:
+  gravatar: false
+  shape: circle
+
+# ----------------------------------------
+# Publications
+# ----------------------------------------
+publications:
+  date_format: 'January 2006'
+  citation_style: apa
+
+# ----------------------------------------
+# Related Content
+# ----------------------------------------
+show_related:
+  post: true
+  project: true
+  publication: true
 
 
