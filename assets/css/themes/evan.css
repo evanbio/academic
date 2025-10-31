@@ -1,0 +1,28 @@
+/* Hugo Blox color theme: EVAN - Modern Tech Cyan for Bioinformatics */
+:root {
+  /* Cyan Primary Palette - Optimized for modern tech & data science */
+  --hb-primary-50-rgb: 240 253 250;      /* Lightest cyan */
+  --hb-primary-100-rgb: 204 251 241;     /* Very light cyan */
+  --hb-primary-200-rgb: 153 246 228;     /* Light cyan */
+  --hb-primary-300-rgb: 94 234 212;      /* Medium light cyan */
+  --hb-primary-400-rgb: 45 212 191;      /* Bright cyan */
+  --hb-primary-500-rgb: 20 184 166;      /* Base cyan (Teal 500) */
+  --hb-primary-600-rgb: 13 148 136;      /* Standard cyan (Teal 600) - Main brand color */
+  --hb-primary-700-rgb: 15 118 110;      /* Dark cyan */
+  --hb-primary-800-rgb: 17 94 89;        /* Darker cyan */
+  --hb-primary-900-rgb: 19 78 74;        /* Very dark cyan */
+  --hb-primary-950-rgb: 4 47 46;         /* Darkest cyan */
+
+  /* Emerald Secondary Palette - Complementary green for bioinformatics */
+  --hb-secondary-50-rgb: 236 253 245;    /* Lightest green */
+  --hb-secondary-100-rgb: 209 250 229;   /* Very light green */
+  --hb-secondary-200-rgb: 167 243 208;   /* Light green */
+  --hb-secondary-300-rgb: 110 231 183;   /* Medium light green */
+  --hb-secondary-400-rgb: 52 211 153;    /* Bright green */
+  --hb-secondary-500-rgb: 16 185 129;    /* Base green */
+  --hb-secondary-600-rgb: 5 150 105;     /* Standard green */
+  --hb-secondary-700-rgb: 4 120 87;      /* Dark green */
+  --hb-secondary-800-rgb: 6 95 70;       /* Darker green */
+  --hb-secondary-900-rgb: 6 78 59;       /* Very dark green */
+  --hb-secondary-950-rgb: 2 44 34;       /* Darkest green */
+}

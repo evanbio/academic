@@ -19,8 +19,8 @@
 # Appearance
 # ----------------------------------------
 appearance:
-  mode: light  # 强制亮色模式
-  color: zinc  # 中性灰色配色
+  mode: system  # 自动切换亮色/暗色
+  color: evan  # Modern tech cyan 专属配色
 
 # ----------------------------------------
 # SEO & Social
