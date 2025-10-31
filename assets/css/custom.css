@@ -1,0 +1,72 @@
+/* ============================================================================
+   Custom Styles for Menu, Links, and Sections
+   Apply evan_color theme to specific elements
+   ============================================================================ */
+
+/* Primary brand color (Material Blue) */
+:root {
+  --brand-primary: #0d47a1;        /* Material Blue 700 - Main */
+  --brand-primary-hover: #1565c0;  /* Material Blue 600 - Hover */
+  --brand-primary-dark: #002171;   /* Material Blue 900 - Dark */
+}
+
+/* ============================================================================
+   MENU / NAVBAR
+   ============================================================================ */
+
+/* Navbar background */
+.navbar,
+header.navbar {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+/* Menu text color */
+.nav-link {
+  color: #1F2937 !important;  /* Gray 800 */
+}
+
+/* Menu text hover */
+.nav-link:hover {
+  color: var(--brand-primary) !important;
+}
+
+/* Active menu item */
+.nav-link.active {
+  color: var(--brand-primary) !important;
+  font-weight: 600;
+}
+
+/* Logo text */
+.navbar-brand {
+  color: var(--brand-primary-dark) !important;
+  font-weight: 600;
+}
+
+/* ============================================================================
+   LINKS
+   ============================================================================ */
+
+/* Default link color */
+a {
+  color: var(--brand-primary) !important;
+  transition: color 0.2s ease;
+}
+
+/* Link hover */
+a:hover {
+  color: var(--brand-primary-hover) !important;
+}
+
+/* ============================================================================
+   HOME SECTIONS (Optional)
+   ============================================================================ */
+
+/* Alternating section backgrounds (if needed) */
+/* section:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+section:nth-child(even) {
+  background-color: #F0FDFA;
+} */

@@ -1,28 +1,28 @@
-/* Hugo Blox color theme: EVAN - Modern Tech Cyan for Bioinformatics */
+/* Hugo Blox color theme: EVAN - Material Design Blue for Academic */
 :root {
-  /* Cyan Primary Palette - Optimized for modern tech & data science */
-  --hb-primary-50-rgb: 240 253 250;      /* Lightest cyan */
-  --hb-primary-100-rgb: 204 251 241;     /* Very light cyan */
-  --hb-primary-200-rgb: 153 246 228;     /* Light cyan */
-  --hb-primary-300-rgb: 94 234 212;      /* Medium light cyan */
-  --hb-primary-400-rgb: 45 212 191;      /* Bright cyan */
-  --hb-primary-500-rgb: 20 184 166;      /* Base cyan (Teal 500) */
-  --hb-primary-600-rgb: 13 148 136;      /* Standard cyan (Teal 600) - Main brand color */
-  --hb-primary-700-rgb: 15 118 110;      /* Dark cyan */
-  --hb-primary-800-rgb: 17 94 89;        /* Darker cyan */
-  --hb-primary-900-rgb: 19 78 74;        /* Very dark cyan */
-  --hb-primary-950-rgb: 4 47 46;         /* Darkest cyan */
+  /* Blue Primary Palette - Material Design Blue */
+  --hb-primary-50-rgb: 227 242 253;      /* Lightest blue */
+  --hb-primary-100-rgb: 187 222 251;     /* Very light blue */
+  --hb-primary-200-rgb: 144 202 249;     /* Light blue */
+  --hb-primary-300-rgb: 100 181 246;     /* Medium light blue */
+  --hb-primary-400-rgb: 66 165 245;      /* Bright blue */
+  --hb-primary-500-rgb: 33 150 243;      /* Base blue (Material Blue 500) */
+  --hb-primary-600-rgb: 21 101 192;      /* Standard blue (Material Blue 600) - Hover */
+  --hb-primary-700-rgb: 13 71 161;       /* Main blue (Material Blue 700) - Brand */
+  --hb-primary-800-rgb: 2 68 110;        /* Dark blue */
+  --hb-primary-900-rgb: 0 33 113;        /* Very dark blue */
+  --hb-primary-950-rgb: 0 20 70;         /* Darkest blue */
 
-  /* Emerald Secondary Palette - Complementary green for bioinformatics */
-  --hb-secondary-50-rgb: 236 253 245;    /* Lightest green */
-  --hb-secondary-100-rgb: 209 250 229;   /* Very light green */
-  --hb-secondary-200-rgb: 167 243 208;   /* Light green */
-  --hb-secondary-300-rgb: 110 231 183;   /* Medium light green */
-  --hb-secondary-400-rgb: 52 211 153;    /* Bright green */
-  --hb-secondary-500-rgb: 16 185 129;    /* Base green */
-  --hb-secondary-600-rgb: 5 150 105;     /* Standard green */
-  --hb-secondary-700-rgb: 4 120 87;      /* Dark green */
-  --hb-secondary-800-rgb: 6 95 70;       /* Darker green */
-  --hb-secondary-900-rgb: 6 78 59;       /* Very dark green */
-  --hb-secondary-950-rgb: 2 44 34;       /* Darkest green */
+  /* Light Blue Secondary Palette */
+  --hb-secondary-50-rgb: 225 245 254;    /* Lightest light blue */
+  --hb-secondary-100-rgb: 179 229 252;   /* Very light light blue */
+  --hb-secondary-200-rgb: 129 212 250;   /* Light light blue */
+  --hb-secondary-300-rgb: 79 195 247;    /* Medium light blue */
+  --hb-secondary-400-rgb: 41 182 246;    /* Bright light blue */
+  --hb-secondary-500-rgb: 3 169 244;     /* Base light blue */
+  --hb-secondary-600-rgb: 3 155 229;     /* Standard light blue */
+  --hb-secondary-700-rgb: 2 136 209;     /* Dark light blue */
+  --hb-secondary-800-rgb: 2 119 189;     /* Darker light blue */
+  --hb-secondary-900-rgb: 1 87 155;      /* Very dark light blue */
+  --hb-secondary-950-rgb: 1 60 110;      /* Darkest light blue */
 }
