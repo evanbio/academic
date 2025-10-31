@@ -20,7 +20,8 @@
 # ----------------------------------------
 appearance:
   mode: system  # 自动切换亮色/暗色
-  color: evan  # Modern tech cyan 专属配色
+  color: evan_color  # Modern tech cyan 专属配色
+  font: evan_font  # Inter + Roboto 字体组合
 
 # ----------------------------------------
 # SEO & Social
@@ -77,9 +78,12 @@ header:
   navbar:
     enable: true
     blox: "navbar"
+    align: "right"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
+    highlight_active_link: true
+    show_translations: false
     logo:
       text: "Evan Zhou"
 

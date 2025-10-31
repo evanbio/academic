@@ -16,14 +16,4 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
 
-  # Simple intro
-  - block: markdown
-    content:
-      text: |-
-        Computational biologist specializing in **single-cell omics** and **drug target discovery**.
-
-        Building reproducible bioinformatics tools and contributing to open-source research.
-    design:
-      columns: '1'
-      css_class: 'text-center'
 ---
