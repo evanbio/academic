@@ -28,7 +28,7 @@
 /* About Me heading - target prose and bio-text classes */
 .prose h2,
 .bio-text h2 {
-  font-size: 2.5rem !important;
+  font-size: 3rem !important;
   font-weight: 600 !important;
   color: #0d47a1 !important;
 }
@@ -36,7 +36,7 @@
 /* About Me paragraph - target prose and bio-text classes */
 .prose p,
 .bio-text p {
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   font-weight: 500 !important;
   color: #374151 !important;
   text-align: justify !important;
@@ -70,19 +70,19 @@
 }
 
 /* ============================================================================
-   Interests Section Styling
+   Interests & Education Section Styling
    ============================================================================ */
 
-/* Interests heading - blue color */
+/* Interests and Education headings - blue color */
 .section-subheading {
   color: #0d47a1 !important;
-  font-size: 1.3rem !important;
+  font-size: 2rem !important;
   font-weight: 600 !important;
 }
 
-/* Interests list items - larger font */
+/* Interests and Education list items - larger font */
 .list-disc li {
-  font-size: 1.2rem !important;
+  font-size: 1.5rem !important;
 }
 
 /* ============================================================================
@@ -95,15 +95,15 @@ a[href*="cv"] {
   background: rgba(13, 71, 161, 0.05) !important;
   color: #0d47a1 !important;
   border: 1px solid rgba(13, 71, 161, 0.2) !important;
-  padding: 14px 40px !important;
-  font-size: 1rem !important;
+  padding: 16px 48px !important;
+  font-size: 1.3rem !important;
   font-weight: 600 !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
   box-shadow: 0 2px 4px rgba(13, 71, 161, 0.1) !important;
   transition: all 0.25s ease !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 10px !important;
   text-decoration: none !important;
 }
 
