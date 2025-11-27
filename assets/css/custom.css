@@ -36,7 +36,7 @@
 /* About Me paragraph - target prose and bio-text classes */
 .prose p,
 .bio-text p {
-  font-size: 1.3rem !important;
+  font-size: 1.5rem !important;
   font-weight: 500 !important;
   color: #374151 !important;
   text-align: justify !important;
@@ -67,6 +67,22 @@
 .bio-text {
   max-width: none !important;
   width: 100% !important;
+}
+
+/* ============================================================================
+   Interests Section Styling
+   ============================================================================ */
+
+/* Interests heading - blue color */
+.section-subheading {
+  color: #0d47a1 !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+/* Interests list items - larger font */
+.list-disc li {
+  font-size: 1.2rem !important;
 }
 
 /* ============================================================================
