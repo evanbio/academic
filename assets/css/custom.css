@@ -55,11 +55,11 @@
   max-width: 900px !important;
 }
 
-/* Increase prose content width - use more specific selectors */
-.prose,
-.prose-slate,
-.pt-2.prose {
-  max-width: 100% !important;
+/* Increase prose content width - target the exact nested structure */
+.pt-2.justify-content-center.prose,
+.pt-2.prose.prose-slate,
+.justify-content-center.prose {
+  max-width: none !important;
   width: 100% !important;
 }
 
@@ -67,15 +67,17 @@
    Download CV Button Redesign
    ============================================================================ */
 
-/* Target the download CV button - Text link style */
+/* Target the download CV button - Subtle button style */
 a[href*="resume"],
 a[href*="cv"] {
-  background: transparent !important;
+  background: rgba(13, 71, 161, 0.05) !important;
   color: #0d47a1 !important;
-  border: none !important;
+  border: 1px solid rgba(13, 71, 161, 0.2) !important;
   padding: 10px 40px !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 4px rgba(13, 71, 161, 0.1) !important;
   transition: all 0.25s ease !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -83,14 +85,17 @@ a[href*="cv"] {
   text-decoration: none !important;
 }
 
-/* Hover effect - Slightly darker blue */
+/* Hover effect - Slightly stronger background and shadow */
 a[href*="resume"]:hover,
 a[href*="cv"]:hover {
-  color: #1565c0 !important;
+  background: rgba(13, 71, 161, 0.1) !important;
+  border-color: rgba(13, 71, 161, 0.3) !important;
+  box-shadow: 0 4px 8px rgba(13, 71, 161, 0.15) !important;
 }
 
 /* Active/Click effect */
 a[href*="resume"]:active,
 a[href*="cv"]:active {
-  color: #0d47a1 !important;
+  transform: translateY(1px) !important;
+  box-shadow: 0 1px 2px rgba(13, 71, 161, 0.1) !important;
 }
