@@ -25,24 +25,17 @@
    About Me Section Styling
    ============================================================================ */
 
-/* About Me heading - modern elegant style */
-.about-me h2,
-.wg-about h2,
-#about h2,
-article h2 {
+/* About Me heading - target prose and bio-text classes */
+.prose h2,
+.bio-text h2 {
   font-size: 2.5rem !important;
   font-weight: 600 !important;
   color: #0d47a1 !important;
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
 }
 
-/* About Me description text - larger for readability */
-.about-me p,
-.wg-about p,
-#about p,
-article p {
+/* About Me paragraph - target prose and bio-text classes */
+.prose p,
+.bio-text p {
   font-size: 1.3rem !important;
-  line-height: 1.8;
   color: #374151 !important;
 }
