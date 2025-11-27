@@ -12,11 +12,35 @@
 /* Increase navbar menu links font size by 50% */
 .navbar .nav-link {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* Increase navbar brand/logo font size */
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* ============================================================================
+   About Me Section Styling
+   ============================================================================ */
+
+/* About Me heading - modern elegant style */
+.about-me h3,
+.wg-about h3,
+#about h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0d47a1;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
+/* About Me description text - larger for readability */
+.about-me p,
+.wg-about p,
+#about p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #374151;
 }
