@@ -236,4 +236,4 @@ awards:
 
 ## About Me
 
-Pharmacy professional with a strong background in drug target discovery and biomarkers, currently focusing on bioinformatics and Python programming. Skilled in applying computational approaches to biomedical research, with a keen interest in collaborative projects. Seeking opportunities to contribute to innovative bioinformatics initiatives and open-source projects.
+Pharmacy professional with a strong background in **drug target discovery** and biomarkers, currently focusing on **bioinformatics** and Python programming. Skilled in applying **computational approaches** to biomedical research, with a keen interest in collaborative projects. Seeking opportunities to contribute to innovative bioinformatics initiatives and **open-source projects**.

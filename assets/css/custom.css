@@ -37,5 +37,14 @@
 .prose p,
 .bio-text p {
   font-size: 1.3rem !important;
+  font-weight: 500 !important;
   color: #374151 !important;
+  text-align: justify !important;
+}
+
+/* Keywords in bio-text - make bold text blue */
+.bio-text strong,
+.prose strong {
+  color: #0d47a1 !important;
+  font-weight: 600 !important;
 }
