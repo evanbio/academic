@@ -55,63 +55,42 @@
   max-width: 900px !important;
 }
 
-/* Increase prose content width */
-.prose {
+/* Increase prose content width - use more specific selectors */
+.prose,
+.prose-slate,
+.pt-2.prose {
   max-width: 100% !important;
+  width: 100% !important;
 }
 
 /* ============================================================================
-   Download CV Button Redesign - Light & Dark Mode
+   Download CV Button Redesign
    ============================================================================ */
 
-/* Target the download CV button - Light Mode */
+/* Target the download CV button - Text link style */
 a[href*="resume"],
 a[href*="cv"] {
-  background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%) !important;
-  color: white !important;
+  background: transparent !important;
+  color: #0d47a1 !important;
   border: none !important;
-  padding: 12px 24px !important;
+  padding: 10px 40px !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3) !important;
-  transition: all 0.3s ease !important;
+  transition: all 0.25s ease !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
+  text-decoration: none !important;
 }
 
-/* Hover effect - Light Mode */
+/* Hover effect - Slightly darker blue */
 a[href*="resume"]:hover,
 a[href*="cv"]:hover {
-  background: linear-gradient(135deg, #1565c0 0%, #1976d2 100%) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(13, 71, 161, 0.4) !important;
+  color: #1565c0 !important;
 }
 
 /* Active/Click effect */
 a[href*="resume"]:active,
 a[href*="cv"]:active {
-  transform: translateY(0) !important;
-  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.3) !important;
-}
-
-/* Dark Mode - Brighter gradient for better contrast */
-@media (prefers-color-scheme: dark) {
-  a[href*="resume"],
-  a[href*="cv"] {
-    background: linear-gradient(135deg, #2196f3 0%, #42a5f5 100%) !important;
-    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4) !important;
-  }
-
-  a[href*="resume"]:hover,
-  a[href*="cv"]:hover {
-    background: linear-gradient(135deg, #42a5f5 0%, #64b5f6 100%) !important;
-    box-shadow: 0 6px 16px rgba(33, 150, 243, 0.5) !important;
-  }
-
-  a[href*="resume"]:active,
-  a[href*="cv"]:active {
-    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.4) !important;
-  }
+  color: #0d47a1 !important;
 }
