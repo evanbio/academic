@@ -1,152 +1,78 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
+# Yibin Zhou - Academic Portfolio
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+[![Website](https://img.shields.io/badge/Website-academic.evanzhou.org-blue?style=flat-square)](https://academic.evanzhou.org)
+[![Blog](https://img.shields.io/badge/Blog-Cell_by_Cell-green?style=flat-square)](https://blog.evanzhou.org)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-Profile-orange?style=flat-square)](https://scholar.google.com/citations?user=oDo9Be8AAAAJ)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
 
-<h1 align="center">The Portfolio That Works While You Sleep</h1>
+**[English](README.md)** | **[中文](README_CN.md)**
+
+> 🧬 Pharmacy graduate specializing in bioinformatics, computational biology, and drug target discovery
+
+## 👋 Welcome
+
+Welcome to my academic portfolio website! I'm a graduate student at Fudan University with a passion for integrating computational approaches into biomedical research. This repository hosts my personal academic website showcasing my research, projects, and contributions to the bioinformatics community.
+
+**🔗 Visit the live site: [academic.evanzhou.org](https://academic.evanzhou.org)**
+
+## 🌟 About Me
+
+I'm a pharmacy professional with expertise in:
+
+- 🧪 **Drug Target Discovery** - Identifying therapeutic targets through multi-omics analysis
+- 🧬 **Bioinformatics** - Single-cell RNA-seq, data visualization, and computational pipelines
+- 💻 **Open Source Development** - Building R packages for reproducible bioinformatics research
+- 📝 **Science Communication** - Writing about workflows and best practices in computational biology
+
+### Research Interests
+
+- Machine Learning in Drug Discovery
+- Multi-omics Data Integration
+- Biomarker Identification
+- Clinical Pharmacology & Pharmacogenomics
+
+## 🎯 What's on This Site
+
+### 📚 Projects
+
+Featured bioinformatics tools and R packages I've developed:
+
+- **[bioPalette](https://github.com/evanbio/bioPalette)** - Semantic color system for biological data visualization
+- **[scFlowKit](https://github.com/evanbio/scFlowKit)** - Single-cell RNA-seq workflow toolkit
+- **[evanverse](https://github.com/evanbio/evanverse)** - Personal R package ecosystem
+
+### 📄 Publications
+
+Co-authored research on clinical studies and bioinformatics applications, including work on pediatric endophthalmitis and cutaneous oncology.
+
+### ✍️ Blog
+
+I write about bioinformatics, academic productivity, and data science on my blog:
+**[Cell by Cell](https://blog.evanzhou.org)** - Bilingual articles on scientific workflows and computational methods
+
+## 🛠️ Tech Stack
+
+This website is built with:
+
+- **Hugo** - Static site generator
+- **Hugo Blox** - Academic theme framework
+- **Netlify** - Hosting and deployment
+
+## 📬 Get in Touch
+
+I'm always open to collaboration on bioinformatics projects and research initiatives!
+
+- 📧 Email: [evanzhou.bio@gmail.com](mailto:evanzhou.bio@gmail.com)
+- 🔗 LinkedIn: [yibin-zhou](https://www.linkedin.com/in/yibin-zhou)
+- 🐙 GitHub: [@evanbio](https://github.com/evanbio)
+- 📖 ORCID: [0009-0009-4600-8175](https://orcid.org/0009-0009-4600-8175)
+
+## 📄 License
+
+This website content is licensed under [MIT License](LICENSE). Feel free to use this repository as a template for your own academic website!
+
+---
 
 <p align="center">
-  <strong>Your unfair advantage in academia.</strong><br/>
-  Stop sending PDFs into the void. Build a living portfolio that boosts citations and lands offers.<br/>
-  Trusted by 250,000+ researchers at <strong>MIT, Stanford, and Google</strong>.
+  <sub>Built with ❤️ using Hugo and Hugo Blox Builder</sub>
 </p>
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Launch Free (60s)</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://marketplace.visualstudio.com/items?itemName=ownable.ownable"><b>Visual Editor</b></a>
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb"><img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord"></a>
-  <a href="https://github.com/HugoBlox/hugo-theme-academic-cv"><img src="https://img.shields.io/github/stars/HugoBlox/hugo-theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars"></a>
-</p>
-
----
-
-## Why This Template?
-
-Most CVs are static PDFs that get lost in the pile. This is an **intelligent portfolio** that works 24/7 to advance your career.
-
-- **🔮 Future-Proof:** Your content lives in simple **Markdown**. No database to break, no lock-in.
-- **🤖 AI-Ready:** Optimized for search engines and LLMs, so your work is found and cited.
-- **⚡ Zero Maintenance:** Auto-import citations from BibTeX and focus on research.
-- **✍️ Edit Visually:** Use **Ownable CMS** in VS Code — no coding needed. Full capabilities in Pro.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" 
-    alt="Deploy this template" width="400">
-  </a>
-</p>
-
-![Ownable CMS in Action](https://raw.githubusercontent.com/HugoBlox/kit/main/.github/media/studio/slide-1.webp)
-*Ownable CMS: Drag-and-drop page builder inside VS Code.*
-
-> "My citations went up 3x after switching to this template. The citation auto-sync feature is a lifesaver."
-> — **Dr. Zhang**, AI Research Scientist, Meta
-
----
-
-## Who This Is For
-
-- Students and grads applying to top labs and industry roles
-- Researchers who want a living, citable portfolio
-- Faculty/PIs showcasing publications, talks, and group news
-
----
-
-## Features
-
-| Feature | Benefit |
-| :--- | :--- |
-| **Markdown, Jupyter, RStudio** | Write in the tools you already use. |
-| **Auto-Update Citations** | Drop in a BibTeX file; formatted lists generated automatically. |
-| **Visual Editor** | Drag-and-drop blocks to build pages in minutes. |
-| **Global CDN** | Blazing fast load times (100/100 Lighthouse scores). |
-| **Privacy First** | You own your data. Host for free on GitHub Pages. |
-
----
-
-## Notebook → Posts and Slides
-
-- Publish your actual `.ipynb` as beautiful long-form posts — code, outputs, and narrative kept intact.
-- Slides in Markdown with Reveal.js: math, syntax highlight, diagrams, speaker notes.
-- Coming soon: **Notebook → Slides (beta)**. Request early access in Discord.
-
-Learn more: docs on [Notebooks](https://docs.hugoblox.com/reference/markdown/#-notebooks) and [Slides](https://docs.hugoblox.com/guides/slides/).
-
----
-
-## Why Go Pro (from $8/m)
-
-- Enhanced Ownable CMS visual editor — save 10–20 hours setting up and polishing
-- Premium CV & Resumé designs — make an unforgettable first impression
-- Pro blocks, remove attribution, and priority support
-
----
-
-## Free vs Pro
-
-| Feature | Academic CV (Free) | Academic CV Pro & Resumé Pro |
-| --- | --- | --- |
-| Design | Professional & clean | Premium designs |
-| Layouts | Standard sections | Advanced timelines & layouts |
-| Courses/Lectures | Basic | Fully-Featured |
-| First Impression | Strong | Unforgettable |
-| Discord Support | Community | Priority |
-
-<p align="center">
-  <a href="https://hugoblox.com/pricing?utm_source=github&utm_medium=readme"><b>💎 Upgrade to Pro</b></a><br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
-
----
-
-## Get Started
-
-### Option 1: No-Code (Fastest)
-Launch a fully hosted site in your browser. No software to install.
-
-👉 [**Launch in Browser (Free)**](https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme)
-
-### Option 2: Studio (Visual Editor)
-1) Install [Ownable CMS](https://marketplace.visualstudio.com/items?itemName=ownable.ownable) for VS Code  
-2) Open this project and edit visually
-
-### Option 3: CLI (Developers)
-1) Install [Hugo](https://docs.hugoblox.com/start/cli/)
-2) Create your site with the CLI:
-
-```bash
-npx hugoblox create site --template academic-cv
-```
-
----
-
-## FAQ
-
-- Do I need to know Hugo? No — you can edit visually or write Markdown.
-- Can I host for free? Yes — GitHub Pages/Netlify are supported.
-- Can I export/migrate later? Yes — your site is just files.
-- Can I cancel Pro anytime? Yes.
-
----
-
-## Community & Support
-
-- 💬 [**Discord Community**](https://discord.gg/z8wNYzb)
-- 📚 [**Documentation**](https://docs.hugoblox.com/?utm_source=github&utm_medium=readme)
-- 🐦 [**Follow on X**](https://x.com/MakeOwnable)
-- ⭐ [**Star on GitHub**](https://github.com/HugoBlox/kit)
-
----
-
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
-
-<!--START_SECTION:news-->
-<!--Updated at 2026-04-05T01:22:58.824Z-->
-<!--END_SECTION:news-->
