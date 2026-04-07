@@ -65,9 +65,39 @@ permalinks:
 # 是否禁用 URL 别名（例如旧 URL 的重定向）
 disableAliases: true  # 当前设置为 true，禁用别名
 
+# 自定义媒体类型（Netlify）
+mediaTypes:
+  text/netlify:
+    delimiter: ''
+    suffixes: ['']
+
+# 自定义输出格式
+outputFormats:
+  headers:
+    baseName: _headers
+    isPlainText: true
+    mediatype: text/netlify
+    notAlternative: true
+  redirects:
+    baseName: _redirects
+    isPlainText: true
+    mediatype: text/netlify
+    notAlternative: true
+  backlinks:
+    mediaType: application/json
+    baseName: backlinks
+    isPlainText: true
+    notAlternative: true
+  LLM:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
+    permalinkable: true
+
 # 不同页面类型的输出格式
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]  # 首页支持的格式
+  home: [HTML, RSS, headers, redirects, backlinks, LLM]  # 首页支持的格式
   section: [HTML, RSS]  # 其他部分页面（例如博客、出版物）支持的格式
 
 # 图片处理设置
