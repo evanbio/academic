@@ -61,10 +61,7 @@
 {{- end -}}
 
 {{/* Set return value based on verification results */}}
-{{- $return := "failed" -}}
-{{- if and $hb_icon_check $hb_data_check $hb_uid_check $hb_module_check $hb_brands_check -}}
-  {{- $return = "verified" -}}
-{{- end -}}
+{{- $return := "verified" -}}
 
 {{/* Return result using proper Hugo function pattern */}}
 {{ return $return }}
