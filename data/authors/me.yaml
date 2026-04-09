@@ -11,12 +11,13 @@ name:
 postnominals: []
 status:
   icon: "☕️"
-role: Graduate Student in Clinical Pharmacy
+role: Researcher and Builder in Computational Biology
 bio: |
-  Yibin Zhou is a graduate student at Fudan University specializing in
-  bioinformatics, computational biology, and drug target discovery. He
-  develops open-source R packages for single-cell omics analysis and
-  biological data visualization.
+  Yibin Zhou builds tools and conducts research at the intersection of
+  biology, data, and code. His work uses skin as a model tissue to study
+  cellular dynamics, tissue regeneration, and spatial organization, with
+  a current focus on atopic dermatitis and cutaneous squamous cell
+  carcinoma. He is currently preparing for a PhD in computational biology.
 
 affiliations:
   - name: Fudan University
@@ -36,59 +37,47 @@ links:
     url: https://orcid.org/0009-0009-4600-8175
 
 interests:
-  - Bioinformatics
-  - Single-cell RNA-seq
-  - Drug Target Discovery
-  - Machine Learning in Biomedicine
+  - Single-cell and Spatial Transcriptomics
+  - Tissue Biology and Skin Disease
+  - Multi-omics Data Integration
+  - Reproducible Research Workflows
 
 education:
-  - degree: MS Clinical Pharmacy
+  - degree: MS in Clinical Pharmacy
     institution: Fudan University
     start: 2022-09-01
-    summary: |
-      GPA: 3.3 / 4.0. Focused on computational pharmacology and multi-omics data integration.
-  - degree: BE Pharmaceutical Engineering
+    end: 2025-06-30
+
+  - degree: BE in Pharmaceutical Engineering
     institution: China Pharmaceutical University
     start: 2018-09-01
     end: 2022-06-30
-    summary: |
-      GPA: 3.5 / 5.0. Relevant courses: Biochemistry, Medicinal Chemistry, Pharmaceutical Analysis.
 
 experience:
-  - role: Creator & Developer
-    org: bioPalette
-    start: 2025-04-01
+  - role: Creator & Maintainer
+    org: ukbflow
+    start: 2025-12-01
     summary: |
-      Designed and implemented an R package providing semantic color palettes for biological data visualization.
-  - role: Founder & Maintainer
-    org: scFlowKit
-    start: 2025-04-01
+      Built an R-based workflow toolkit for large-scale UK Biobank cohort analysis, covering data extraction, phenotype harmonization, and reproducible pipeline design.
+
+  - role: Creator & Maintainer
+    org: evanverse
+    start: 2025-06-01
     summary: |
-      Developed a reproducible single-cell RNA-seq workflow toolkit supporting multiple data formats.
-  - role: Graduate Researcher & Co-author
-    org: Clinical Research Collaboration
-    start: 2023-10-01
-    end: 2024-01-31
-    summary: |
-      Co-authored a clinical study on pediatric post-traumatic endophthalmitis (DOI: 10.3390/antibiotics14010020).
+      Developed an R utility package for data wrangling and visualization in biological research, with a focus on tidy, reusable patterns.
 
 skills:
   - name: Programming
     items:
       - label: R
-        level: 5
       - label: Python
-        level: 4
       - label: Bash
-        level: 3
+
   - name: Tools & Platforms
     items:
       - label: Git & GitHub
-        level: 4
       - label: Linux / Ubuntu
-        level: 4
       - label: Hugo & Netlify
-        level: 4
 
 languages:
   - name: Chinese
@@ -98,14 +87,3 @@ languages:
     level: 4
     label: Professional
 
-awards:
-  - title: Introduction to Git and GitHub
-    awarder: Google / Coursera
-    date: "2025-04-09"
-    summary: Completed with 100% score.
-    icon: hero/trophy
-  - title: R Programming
-    awarder: Johns Hopkins University / Coursera
-    date: "2025-04-16"
-    summary: Completed with 100% score.
-    icon: hero/trophy
