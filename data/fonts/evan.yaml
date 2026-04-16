@@ -1,0 +1,36 @@
+# HugoBlox Font Pack
+# https://docs.hugoblox.com
+
+hugoblox:
+  meta:
+    format: "hugoblox-font@1"
+    name: "Evan"
+    vendor: "evan"
+    version: "1.0.0"
+    license: "MIT"
+    style: "mixed"
+    description: "Custom serif heading and sans-serif body typography for Evan Zhou's academic website"
+
+  families:
+    heading: "Source Serif 4"
+    body: "Inter"
+    code: "JetBrains Mono"
+
+  weights:
+    heading: [500, 600, 700]
+    body: [400, 600]
+    code: [400]
+
+  leading:
+    heading: 1.2
+    body: 1.7
+    code: 1.5
+
+  tracking:
+    heading: "0"
+    body: "0"
+
+  variable:
+    heading: true
+    body: true
+    code: false
